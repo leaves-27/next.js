@@ -12,24 +12,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = "/Users/kk/tests/next.js/components/question.js";
 
-
 var Question = function Question(props) {
   var questions = [];
 
   for (var i = 0; i < props.answers.length; i++) {
     questions.push(_react2.default.createElement("label", { style: { "display": "block" }, __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 6
       }
-    }, _react2.default.createElement("span", {
-      __source: {
+    }, _react2.default.createElement("span", { style: { "margin-right": "5px" }, __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 7
       }
     }, "\u2726"), _react2.default.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 8
       }
     }, props.answers[i].desc)));
   }
@@ -42,7 +40,7 @@ var Question = function Question(props) {
       "margin": "0 0 20px 0"
     }, __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     }
   }, questions);
 };

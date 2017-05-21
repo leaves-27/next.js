@@ -1,12 +1,10 @@
-
-
 const Question = (props) => {
   let questions = [];
 
   for(let i=0;i<props.answers.length;i++){
     questions.push(
       <label style={{ "display":"block" }}>
-        <span>✦</span>
+        <span style={{ "margin-right" : "5px"}}>✦</span>
         <span>{ props.answers[i].desc}</span>
       </label>
     )

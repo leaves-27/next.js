@@ -284,11 +284,11 @@ var second = function second() {
       fileName: _jsxFileName,
       lineNumber: 97
     }
-  }, '\u6350\u8D6010\u5143\uFF0C\u9F13\u52B1\u4F5C\u8005\u7EE7\u7EED\u5199\u51FA\u66F4\u597D\u7684\u6559\u7A0B'), _react2.default.createElement('button', { type: 'button', className: 'btn btn-success col-md-offset-1', __source: {
+  }, '\u5982\u679C\u89C9\u5F97\u5F88\u8D5E\u3002\u6350\u8D602-10\u5143\uFF0C\u9F13\u52B1\u4F5C\u8005\u7EE7\u7EED\u5199\u4F5C'), _react2.default.createElement('button', { type: 'button', className: 'btn btn-success col-md-offset-1', __source: {
       fileName: _jsxFileName,
       lineNumber: 98
     }
-  }, '\u4E0A\u4E00\u9875'), _react2.default.createElement('button', { type: 'button', className: 'btn btn-success col-md-offset-1', __source: {
+  }, '\u4E0A\u4E00\u9875'), _react2.default.createElement('button', { type: 'button', className: 'btn btn-success', style: { "margin-left": "10px" }, __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     }

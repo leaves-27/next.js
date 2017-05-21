@@ -1,20 +1,52 @@
+import Link from 'next/link'
+const linkStyle = {
+  marginRight: 15
+}
+
 const Navigator = [
-  "起步入门",
-  "在页面间的跳转",
-  "共享组件的用法",
-  "创建动态页面",
-  "路由美化后的清晰URLs",
-  "清晰URLs的服务器端支持",
-  "为页面获取数据",
-  "给组件添加样式",
-  "部署一个Next.js App"
+  {
+    url:"/",
+    desc:"起步入门"
+  },
+  {
+    url:"/link",
+    desc:"在页面间的跳转"
+  },
+  {
+    url:"/share",
+    desc:"共享组件的用法"
+  },{
+    url:"/dynamic",
+    desc:"创建动态页面"
+  },{
+    url:"/clean",
+    desc:"路由美化后的清晰URLs"
+  },{
+    url:"/server",
+    desc:"清晰URLs的服务器端支持"
+  },{
+    url:"/fetch",
+    desc:"为页面获取数据"
+  },{
+    url:"/style",
+    desc:"给组件添加样式"
+  },{
+    url:"/deploy",
+    desc:"部署一个Next.js App"
+  }
 ]
 
 const getNavigatorList = (navigator) => {
   let arr = [];
 
   for(let i=0;i<navigator.length;i++){
-    arr.push(<li key={i} className="list-group-item">{ navigator[i] }</li>)
+    arr.push(
+      <li key={i} className="list-group-item">
+        <Link href={navigator[i].url}>
+          <a style={linkStyle}>{ navigator[i].desc }</a>
+        </Link>
+      </li>
+    )
   }
   
   return arr;
