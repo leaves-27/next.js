@@ -7,7 +7,7 @@ import Question from '../components/question'
 const one = () => (
   <div>
       <p>目前，创建单页JavaScript应用还是相当有挑战的这已经不是什么秘密。幸运的是，有一些简化了这些事情，可以帮助你快速构建你的app的现成项目。</p>
-      <p>例如<a>Create React App</a>就是一个非常好的例子。</p>
+      <p>例如<a hre="https://github.com/facebookincubator/create-react-app" target="_blank">Create React App</a>就是一个非常好的例子。</p>
       <p>但即使如此，你要构建适合你自己的JavaScript应用，还是有很高的成本。因为你还需要学习客户端路由、页面布局等等。如果你想要完成服务端渲染来使你的页面加载的更快，事情可能变的会更加困难。</p>
       <p>
         <strong>鉴于此，我们需要事情变的简单但可定制。</strong>
