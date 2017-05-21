@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Header from './header';
 import Menu from './menu';
+import Footer from './footer';
 
 const Layout = (props) => (
   <div>
-    <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <Head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    </Head>
     <Header />
     <div className="container-fluid">
       <div className="row">
@@ -11,12 +16,14 @@ const Layout = (props) => (
           <Menu />
         </div>
         <div className="col-md-9">
-          <div className="main">
+          <div className="main" style={{ "margin-bottom" : "100px" }}>
             {props.children}
+            <Footer />
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 )
 

@@ -1,11 +1,11 @@
 import Layout from '../components/layout'
 import Question from '../components/question'
-import Modal from '../components/modal'
+
 // import $ from 'jquery'
 // import 'bootstrap'
 
 const one = () => (
-  <div style={{ "margin-bottom" : "100px" }}>
+  <div>
       <p>目前，创建单页JavaScript应用还是相当有挑战的这已经不是什么秘密。幸运的是，有一些简化了这些事情，可以帮助你快速构建你的app的现成项目。</p>
       <p>例如<a>Create React App</a>就是一个非常好的例子。</p>
       <p>但即使如此，你要构建适合你自己的JavaScript应用，还是有很高的成本。因为你还需要学习客户端路由、页面布局等等。如果你想要完成服务端渲染来使你的页面加载的更快，事情可能变的会更加困难。</p>
@@ -32,7 +32,7 @@ const one = () => (
 )
 
 const second = ()=>(
-  <div style={{ "margin-bottom" : "100px" }}>
+  <div>
     <h5 id="setup">开始</h5>
     <p>
       Next.js可以运行在Windows平台上，同样也可以运行在Mac和Linux平台上。你仅仅需要在你的系统上安装Node.js就可以开始构建Next.js应用。
@@ -93,12 +93,6 @@ const second = ()=>(
         }]
       })
     }
-    <div>
-      <button id="btn" type="button" className="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal">如果觉得很赞。捐赠2-10元，鼓励作者继续写作</button>
-      <button type="button"  className="btn btn-success col-md-offset-1">上一页</button>
-      <button type="button"  className="btn btn-success" style={{ "margin-left" : "10px"}}>下一页</button>
-    </div>
-    <Modal />
   </div>
 )
 
