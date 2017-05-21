@@ -1,0 +1,24 @@
+{
+  "name": "next.js",
+  "version": "1.0.0",
+  "description": "next.js中文版学习",
+  "main": "index.js",
+  "scripts": {
+    "dep": "npm install && bower install",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0"
+  }
+}
