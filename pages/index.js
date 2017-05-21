@@ -1,9 +1,11 @@
 import Layout from '../components/layout'
+import Question from '../components/question'
+import Modal from '../components/modal'
+// import $ from 'jquery'
+// import 'bootstrap'
 
-const Index = () => (
-  <Layout>
-    <h4>起步入门</h4>
-    <div>
+const one = () => (
+  <div style={{ "margin-bottom" : "100px" }}>
       <p>目前，创建单页JavaScript应用还是相当有挑战的这已经不是什么秘密。幸运的是，有一些简化了这些事情，可以帮助你快速构建你的app的现成项目。</p>
       <p>例如<a>Create React App</a>就是一个非常好的例子。</p>
       <p>但即使如此，你要构建适合你自己的JavaScript应用，还是有很高的成本。因为你还需要学习客户端路由、页面布局等等。如果你想要完成服务端渲染来使你的页面加载的更快，事情可能变的会更加困难。</p>
@@ -25,8 +27,85 @@ const Index = () => (
       </p>
       <p>听起来很美好，对不对？</p>
       <p>让我们来尝试一下</p>
-      <button>现在开始</button>
+      <button className="btn btn-success">现在开始</button>
     </div>
+)
+
+const second = ()=>(
+  <div style={{ "margin-bottom" : "100px" }}>
+    <h5 id="setup">开始</h5>
+    <p>
+      Next.js可以运行在Windows平台上，同样也可以运行在Mac和Linux平台上。你仅仅需要在你的系统上安装Node.js就可以开始构建Next.js应用。
+    </p>
+    <p>
+      这之后，你需要有一个文本编辑器来写代码和一个终端来运行相关的命令。
+    </p>
+    <blockquote>
+      <p>
+        如果你的平台是Windows,尝试用 PowerShell. <br />
+        Next.js需要一些命令行或终端配合工作,因为在本指南中，我们将会用到一些特定的unix命令。<br />
+        我们推荐用这个PowerShell以便使下来的学习变的容易。
+      </p>
+    </blockquote>
+    <p>开始，用下面的命令创建一个简单的工程。</p>
+    <pre>
+      <code className="lang-sh hljs bash">
+        mkdir hello-next <br />
+        <span className="hljs-built_in" style={{ "color":"#c18401"}}>cd </span>   
+        hello-next<br />
+        npm init -y<br />
+        npm install --save react react-dom next<br />
+        mkdir pages
+      </code>
+    </pre>
+    <p>
+      然后在hello-next目录中打开"package.json"并添加下面的脚步。
+    </p>
+    <pre>
+      <code className="lang-json hljs">
+        {
+          JSON.stringify({
+            "scripts":{
+              "dev": "next"
+            }
+          },null,2)
+        }
+      </code>
+    </pre>
+    <p>现在一切都准备就续。运行下面的命令启动开发服务器</p>
+    <pre>
+      <code class="lang-json hljs">
+        npm run dev
+      </code>
+    </pre>
+    <p>然后打开你喜欢的浏览器，访问http://localhost:3000 </p>
+    <p>在屏幕上，你看到下面那个一个输出？</p>
+    {
+      Question({
+        "answers" : [{
+          desc : "Error No Page Found"
+        },{
+          desc : "404 - This page could not be found"
+        },{
+          desc : "Hello Next.js"
+        },{
+          desc : "Hello World"
+        }]
+      })
+    }
+    <div>
+      <button id="btn" type="button" className="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal">捐赠10元，鼓励作者继续写出更好的教程</button>
+      <button type="button"  className="btn btn-success col-md-offset-1">上一页</button>
+      <button type="button"  className="btn btn-success col-md-offset-1">下一页</button>
+    </div>
+    <Modal />
+  </div>
+)
+
+const Index = () => (
+  <Layout>
+    <h4 style={{ "margin-bottom" : "40px" }}>起步入门</h4>
+    { second() }
   </Layout>
 )
 

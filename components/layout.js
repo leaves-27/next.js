@@ -1,6 +1,5 @@
 import Header from './header';
 import Menu from './menu';
-// import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const Layout = (props) => (
   <div>
@@ -11,7 +10,7 @@ const Layout = (props) => (
         <div className="col-md-3">
           <Menu />
         </div>
-        <div className="col-md-8 col-md-offset-1">
+        <div className="col-md-9">
           <div className="main">
             {props.children}
           </div>
