@@ -99,7 +99,7 @@ const second = ()=>(
 const Index = () => (
   <Layout>
     <h4 style={{ "margin-bottom" : "40px" }}>起步入门</h4>
-    { second() }
+    { one() }
   </Layout>
 )
 
