@@ -1,6 +1,6 @@
 /bower_components/
 /node_modules/
-/.next
+.next
 /access.log
 /error.log
 .DS_Store
