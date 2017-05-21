@@ -9,9 +9,6 @@ import Footer from '../components/footer';
 import { initStore } from '../store'
 import * as actionType from '../actions';
 
-// import $ from 'jquery'
-// import 'bootstrap'
-
 class Index extends React.Component {
   // static getInitialProps ({ store, isServer }) {
     // store.dispatch(serverRenderClock(isServer))
@@ -127,17 +124,25 @@ class Index extends React.Component {
     )
   }
 
-  goDonation(){
-
-  }
-
   nextStep(){
     const { actions,step } = this.props;
     actions.changeStep(2);
   }
+
+  submitAnswer(){
+    const { actions } = this.props;
+
+    // const res = await fetch('http://learnnextjschina.com')
+    // const json = await res.json()
+
+    // if(json.code==0) {
+    //   actions.updateAnswers(json.data.id);
+    // }else{
+    //   actions.throwError(json.msg)
+    // }
+  }
   
   render () {
-    console.log("this.props:",this.props)
     let html = null;
     let { step } = this.props;
 
