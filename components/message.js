@@ -1,10 +1,9 @@
 const Messsage = () => (
-  <div className="container">
-    <p style={{ 
-        "padding-left":"300px",
-        "margin-top":"100px",
-        "font-size":"20px",
-        "margin-bottom":"100px"
+  <div>
+    <p style={{
+        "text-align":"center",
+        "padding":"100px 0px 100px",
+        "font-size":"20px"
     }}>
       正在紧急开发中，敬请期待。
     </p>

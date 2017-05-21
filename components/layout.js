@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from './header';
 import Menu from './menu';
-import Footer from './footer';
 
 const Layout = (props) => (
   <div>
@@ -16,7 +15,7 @@ const Layout = (props) => (
           <Menu />
         </div>
         <div className="col-md-9">
-          <div className="main" style={{ "margin-bottom" : "100px" }}>
+          <div className="main" style={{ "marginBottom" : "100px" }}>
             {props.children}
           </div>
         </div>
