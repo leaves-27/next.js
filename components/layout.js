@@ -18,7 +18,6 @@ const Layout = (props) => (
         <div className="col-md-9">
           <div className="main" style={{ "margin-bottom" : "100px" }}>
             {props.children}
-            <Footer />
           </div>
         </div>
       </div>

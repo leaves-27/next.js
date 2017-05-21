@@ -93,6 +93,7 @@ const second = ()=>(
         }]
       })
     }
+    <Footer />
   </div>
 )
 
