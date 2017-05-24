@@ -9,6 +9,7 @@ const Layout = (props) => (
       <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
       <script type="text/javascript" src="../static/jquery/dist/jquery.min.js"></script>
       <script type="text/javascript" src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="../static/statistical.js"></script>
     </Head>
     <Header />
     <div className="container-fluid">
