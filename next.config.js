@@ -1,7 +1,7 @@
 var path = require("path");
 
 module.exports = {
-  webpack: function(config, { dev }){
+  webpack: function(config){
     // var vendor = {
     //   jquery : path.join(__dirname,"node_modules/jquery/dist/jquery.min.js"),
     //   bootstrap : path.join(__dirname,"node_modules/bootstrap/dist/js/bootstrap.min.js")
