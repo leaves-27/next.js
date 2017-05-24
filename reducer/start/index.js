@@ -9,13 +9,6 @@ const initState = {
 };
 
 export default createReducer(initState,{
-  [actionTypesApp.CHANGE_STEP](state,action){
-    console.log("state:",state)
-    console.log("action:",action)
-    return Object.assign({},state,{
-      "step" : action.step
-    });
-  },
   [actionTypesApp.POST_ANSWER](state,action){
 
     return Object.assign({},state,{
