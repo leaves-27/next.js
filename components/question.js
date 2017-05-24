@@ -3,7 +3,7 @@ const Question = (props) => {
 
   for(let i=0;i<props.answers.length;i++){
     questions.push(
-      <label key={i} style={{ "display":"block" }}>
+      <label key={props.answers[i].id } style={{ "display":"block" }}>
         <span style={{ "marginRight" : "5px"}}>✦</span>
         <span>{ props.answers[i].desc}</span>
       </label>
