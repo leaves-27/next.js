@@ -1,7 +1,7 @@
 var path = require("path");
 
 module.exports = {
-  webpack: (config, { dev }) => {
+  webpack: function(config, { dev }){
     // var vendor = {
     //   jquery : path.join(__dirname,"node_modules/jquery/dist/jquery.min.js"),
     //   bootstrap : path.join(__dirname,"node_modules/bootstrap/dist/js/bootstrap.min.js")
@@ -22,7 +22,7 @@ module.exports = {
     // config.module.loaders=[loader];
     return config
   },
-  webpackDevMiddleware: (config) => {
+  webpackDevMiddleware: function(config) {
     // Perform customizations to webpack dev middleware config
 
     // Important: return the modified config

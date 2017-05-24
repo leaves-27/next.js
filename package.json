@@ -4,7 +4,6 @@
   "description": "next.js中文版学习",
   "main": "index.js",
   "scripts": {
-    "dep": "npm install && bower install",
     "dev": "next",
     "build": "next build",
     "start": "next start"
