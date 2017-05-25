@@ -32,7 +32,7 @@ class Index extends React.Component {
         </div>
         <p>听起来很美好，对不对？</p>
         <p>让我们来尝试一下</p>
-        <button className="btn btn-success"><Link href="/start"><a style={{ "color" :"#fff"}}>现在开始</a></Link></button>
+        <button className="btn btn-success"><Link href="/start/setup"><a style={{ "color" :"#fff"}}>现在开始</a></Link></button>
       </div>
     )
   } 

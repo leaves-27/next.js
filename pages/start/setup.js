@@ -2,12 +2,12 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import withRedux from 'next-redux-wrapper'
 
-import Layout from '../components/layout'
-import Question from '../components/question'
-import Footer from '../components/footer';
+import Layout from '../../components/layout'
+import Question from '../../components/question'
+import Footer from '../../components/footer';
 
-import { initStore } from '../store'
-import * as actionType from '../actions';
+import { initStore } from '../../store'
+import * as actionType from '../../actions';
 
 class Start extends React.Component {
 
@@ -79,7 +79,7 @@ class Start extends React.Component {
             }]
           })
         }
-        <Footer url="/link" />
+        <Footer url="/start/404" />
       </div>
     )
   }

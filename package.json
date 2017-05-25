@@ -4,7 +4,7 @@
   "description": "next.js中文版学习",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev1": "next",
     "build": "next build",
     "start" : "next start",
     "dev": "node ./server.js"
