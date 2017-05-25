@@ -26,7 +26,7 @@ class Start extends React.Component {
           <p>
             如果你的平台是Windows,尝试用 PowerShell. <br />
             Next.js需要一些命令行或终端配合工作,因为在本指南中，我们将会用到一些特定的unix命令。<br />
-            我们推荐用这个PowerShell以便使下来的学习变的容易。
+            我们推荐用PowerShell以便使下来的学习变的容易。
           </p>
         </blockquote>
         <p>开始，用下面的命令创建一个简单的工程。</p>
