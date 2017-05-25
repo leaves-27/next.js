@@ -51,7 +51,7 @@ class Navigate extends React.Component {
   render(){
     return (
       <Layout>
-        <h4 style={{ "marginBottom" : "40px" }}>起步入门</h4>
+        <h4 style={{ "marginBottom" : "40px" }}>在页面间跳转</h4>
         { this.getMainTemplate() }
       </Layout>
     )

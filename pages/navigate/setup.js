@@ -20,8 +20,7 @@ class Setup extends React.Component {
           }}
 
           next={{
-            "isShow" : true,
-            "text":"现在开始"
+            "isShow" : false
           }} 
         />
       </div>

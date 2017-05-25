@@ -53,7 +53,7 @@ class Footer extends React.Component {
         <div className="row" style={{"marginTop":"10px"}}>
           <button type="button" style={{ "display" : (newPrev.isShow ? "inline-block":"none" ) }} className="btn btn-success" onClick={ router.back }>{ newPrev.text }</button>
           <button style={{ "display" : (newNext.isShow ? "inline-block":"none" ),"marginLeft" : nextMarLeft }}  type="button" className="btn btn-success" onClick={ ()=>{ router.push(url) } }>{ newNext.text }</button>
-          <button style={{ "display" : (newNext.isShow ? "inline-block":"none" ),"marginLeft" : dsMarLeft }}  id="btn" type="button" className="btn btn-danger" data-toggle="modal" data-target="#modal">打赏</button>
+          <button style={{ "marginLeft" : dsMarLeft }}  id="btn" type="button" className="btn btn-danger" data-toggle="modal" data-target="#modal">打赏</button>
         </div>
       </div>
     )
