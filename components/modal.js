@@ -4,7 +4,7 @@ const Modal = () => (
       <div className="modal-content">
         <div className="modal-header">
           <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 className="modal-title">扫描二维码进行捐赠</h4>
+          <h4 className="modal-title">扫描二维码进行打赏</h4>
         </div>
         <div className="modal-body">
           <p style={{ "textAlign" : "center" }}>
