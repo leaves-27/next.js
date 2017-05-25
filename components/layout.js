@@ -19,7 +19,7 @@ const Layout = (props) => (
           <Menu />
         </div>
         <div className="col-md-9">
-          <div className="main" style={{ "marginBottom" : "100px" }}>
+          <div className="main" style={{ "paddingBottom" : "100px" }}>
             {props.children}
           </div>
         </div>

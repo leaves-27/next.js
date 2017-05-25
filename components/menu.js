@@ -9,7 +9,7 @@ const Navigator = [
     desc:"起步入门"
   },
   {
-    url:"/link",
+    url:"/navigate/index",
     desc:"在页面间的跳转"
   },
   {

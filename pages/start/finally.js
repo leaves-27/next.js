@@ -29,7 +29,7 @@ class Finally extends React.Component {
             <a href="https://github.com/zeit/next.js/issues" target="_blank">问题</a> , #next.
           </p>
         </div>
-        <Footer url="/link" />
+        <Footer url="/navigate/index" next={{ text:"下一课" }} />
       </Layout>
     )
   }
