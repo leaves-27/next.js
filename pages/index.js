@@ -1,11 +1,12 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import withRedux from 'next-redux-wrapper'
+import Link from 'next/link'
 
 import Layout from '../components/layout'
 import { initStore } from '../store'
 import * as actionType from '../actions';
-import Link from 'next/link'
+import Footer from '../components/footer';
 
 class Index extends React.Component {
   getMainTemplate () {
@@ -32,7 +33,8 @@ class Index extends React.Component {
         </div>
         <p>听起来很美好，对不对？</p>
         <p>让我们来尝试一下</p>
-        <button className="btn btn-success"><Link href="/start/setup"><a style={{ "color" :"#fff"}}>现在开始</a></Link></button>
+        <button className="btn btn-success" style={{"marginBottom":"10px"}}><Link href="/start/setup"><a style={{ "color" :"#fff"}}>现在开始</a></Link></button>
+        <Footer url="/start/setup" prev="false" next="false" /> 
       </div>
     )
   } 

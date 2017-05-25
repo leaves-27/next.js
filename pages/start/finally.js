@@ -17,7 +17,7 @@ class Finally extends React.Component {
         <h4 style={{ "marginBottom" : "40px" }}>你很棒</h4>
         <div>
           <p>
-            看来你已经构建了你的第一个Next.js app!你觉得如何？<br />
+            看来你已经构建了你的第一个Next.js app!你觉得怎么样？<br />
             如果你喜欢它, 我们更深入的来了解下.
           </p>
           <p>
