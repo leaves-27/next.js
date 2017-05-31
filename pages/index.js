@@ -1,6 +1,7 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import withRedux from 'next-redux-wrapper'
+import QueueAnim from 'rc-queue-anim';
 
 import { initStore } from '../store'
 import * as actionType from '../actions';
@@ -51,10 +52,15 @@ class Index extends React.Component {
   render () {
 
     return (
-      <Layout>
-        <h4 style={{ "marginBottom" : "40px" }}>起步入门</h4>
-        { this.getMainTemplate() }
-      </Layout>
+      
+        <Layout>
+          <QueueAnim 
+              type={['right', 'left']}
+              ease={['easeOutQuart', 'easeInOutQuart']} >
+            <h4 style={{ "marginBottom" : "40px" }}>起步入门</h4>
+            { this.getMainTemplate() }
+          </QueueAnim>
+        </Layout>
     )
   }
 }

@@ -35,10 +35,6 @@ class Navigate extends React.Component {
         </div>
         <Footer 
           url="/navigate/setup" 
-          prev={{
-            "isShow" : false
-          }}
-
           next={{
             "isShow" : true,
             "text":"现在开始"
@@ -51,7 +47,7 @@ class Navigate extends React.Component {
   render(){
     return (
       <Layout>
-        <h4 style={{ "marginBottom" : "40px" }}>在页面间跳转</h4>
+        <h2 style={{ "marginBottom" : "40px" }}>在页面间跳转</h2>
         { this.getMainTemplate() }
       </Layout>
     )
