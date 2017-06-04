@@ -14,13 +14,16 @@ class Navigate extends React.Component {
         <div className="markdown">
           <div>
             <p>现在我们知道如何创建一个简单的Next.js app并且运行它。我们的简单app不仅仅有一个单页面,而且我们可以添加很多我们想要的东西。例如，我们可以通过添加下面的内容到<code>pages/about.js</code>文件创建一个"About"页面:</p>
-            <pre><code className="lang-js hljs javascript"><span className="hljs-keyword">export</span> <span className="hljs-keyword">default</span> () =&gt; (
-              <span className="xml"><span className="hljs-tag">&lt;<span className="hljs-name">div</span>&gt;</span>
-                <span className="hljs-tag">&lt;<span className="hljs-name">p</span>&gt;</span>This is the about page<span className="hljs-tag">&lt;/<span className="hljs-name">p</span>&gt;</span>
-              <span className="hljs-tag">&lt;/<span className="hljs-name">div</span>&gt;</span></span>
-            )
-            </code></pre>
-
+            <pre>
+              <code className="lang-js hljs javascript" dangerouslySetInnerHTML = {{
+                __html : `<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the about page<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)`
+              }}>
+              </code>
+            </pre>
             <p>
               然后我们可以用 
               <a href="http://localhost:3000/about" target="_blank">

@@ -32,27 +32,26 @@ class Start extends React.Component {
         </blockquote>
         <p>开始，用下面的命令创建一个简单的工程。</p>
         <pre>
-          <code className="lang-sh hljs bash">
-            mkdir hello-next <br />
-            <span className="hljs-built_in" style={{ "color":"#c18401"}}>cd </span>   
-            hello-next<br />
-            npm init -y<br />
-            npm install --save react react-dom next<br />
-            mkdir pages
+          <code className="lang-sh hljs bash" dangerouslySetInnerHTML = {{
+            __html : `mkdir hello-next
+<span class="hljs-built_in">cd</span> hello-next
+npm init -y
+npm install --save react react-dom next
+mkdir pages`
+          }}>
           </code>
         </pre>
         <p>
           然后在hello-next目录中打开"package.json"并添加下面的脚步。
         </p>
         <pre>
-          <code className="lang-json hljs">
-            {
-              JSON.stringify({
-                "scripts":{
-                  "dev": "next"
-                }
-              },null,2)
-            }
+          <code className="lang-json hljs" dangerouslySetInnerHTML = {{
+            __html : `{
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"next"</span>
+  }
+}`
+          }}>
           </code>
         </pre>
         <p>现在一切都准备就续。运行下面的命令启动开发服务器</p>

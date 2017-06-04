@@ -13,7 +13,7 @@ const Navigator = [
     desc:"在页面间的跳转"
   },
   {
-    url:"/share",
+    url:"/shared-component/",
     desc:"共享组件的用法"
   },{
     url:"/dynamic",

@@ -21,42 +21,33 @@ class Link extends React.Component {
             </p>
             <p>添加下面的代码到<code>pages/index.js</code></p>
             <pre>
-              <code className="lang-js hljs javascript">
-                <span className="hljs-comment">// This is the Link API</span><br />
-                <span className="hljs-keyword">import</span> Link 
-                <span className="hljs-keyword">from</span> 
-                <span className="hljs-string">'next/link'</span><br />
-                <span className="hljs-keyword">const </span>   
-                Index = 
-                <span className="hljs-function">
-                  <span className="hljs-params">()</span>=&gt;
-                </span> 
-                (
-                  <span className="xml">
-                    <span className="hljs-tag">&lt;
-                      <span className="hljs-name">div</span>&gt;
-                    </span>
-                    <span className="hljs-tag">&lt;
-                      <span className="hljs-name">Link</span> 
-                      <span className="hljs-attr">href</span>=
-                      <span className="hljs-string">"/about"</span>&gt;
-                    </span>
-                    <span className="hljs-tag">&lt;
-                      <span className="hljs-name">a</span>&gt;
-                    </span>About Page
-                    <span className="hljs-tag">&lt;/<span className="hljs-name">a</span>&gt;</span>
-                    <span className="hljs-tag">&lt;/<span className="hljs-name">Link</span>&gt;</span>
-                    <span className="hljs-tag">&lt;<span className="hljs-name">p</span>&gt;</span>Hello Next.js<span className="hljs-tag">&lt;/<span className="hljs-name">p</span>&gt;</span>
-                  <span className="hljs-tag">&lt;/<span className="hljs-name">div</span>&gt;</span></span>
-                )
-            <br />
-            <span className="hljs-keyword">export</span> <span className="hljs-keyword">default</span> Index
-            </code></pre>
+              <code className="lang-js hljs javascript" dangerouslySetInnerHTML={{
+                __html : `<span class="hljs-comment">// This is the Link API</span>
+<span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">'next/link'</span>
+
+<span class="hljs-keyword">const</span> Index = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/about"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>About Page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello Next.js<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Index`
+              }}>
+              </code>
+            </pre>
             <p>这里我们导入<code>next/link</code>作为<code>Link</code> 然后像这样使用它:</p>
-            <pre><code className="lang-js hljs javascript">&lt;Link href=<span className="hljs-string">"/about"</span>&gt;
-              <span className="xml"><span className="hljs-tag">&lt;<span className="hljs-name">a</span>&gt;</span>About Page<span className="hljs-tag">&lt;/<span className="hljs-name">a</span>&gt;</span></span>
-            &lt;<span className="hljs-regexp">/Link&gt;
-            </span></code></pre>
+            <pre>
+              <code className="lang-js hljs javascript" dangerouslySetInnerHTML={{
+                __html : `&lt;Link href=<span class="hljs-string">"/about"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>About Page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/Link&gt;
+</span>`
+              }}>
+              </code>
+            </pre>
             <p>现在试着访问 <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
             <p>然后点击"About Page"链接.页面将跳转到"About"页.</p>
             <blockquote>

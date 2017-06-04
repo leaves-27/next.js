@@ -19,16 +19,15 @@ class First extends React.Component {
           <code>pages/index.js</code> 的文件,并添加下面的内容:
         </p>
         <pre>
-        
-          const Index = ()=&gt;(
-            &lt; div &gt;
-            &lt; p &gt;
-            Hello Next.js
-            &lt; /p &gt;
-            &lt; /div &gt;
-          )
-          export default Index
-       
+          <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
+            __html : `<span class="hljs-keyword">const</span> Index = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello Next.js<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Index`}}>
+          </code>
         </pre>
         <p>
           现在如果你再次访问 
@@ -53,16 +52,18 @@ class First extends React.Component {
           (我们仅仅移除了这个<strong>&lt;/p&gt;</strong> HTML标签)
         </p>
         <pre>
-          
-          const Index = ()=&gt;(
-            &lt;div&gt;
-            &lt;p&gt;
-            Hello Next.js
-            &lt;/div&gt;
-          )
+          <code class="lang-js hljs javascript" dangerouslySetInnerHTML = {{
+            __html : `<span class="hljs-keyword">const</span> Index = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello Next.js
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+)
 
-          export default Index
-     
+export default Index
+</span>`
+          }}>
+          </code>
+          
         </pre>
         <p>这个app在<a href="http://localhost:3000/" target="_blank">http://localhost:3000</a>加载后将发生什么?</p>
         {

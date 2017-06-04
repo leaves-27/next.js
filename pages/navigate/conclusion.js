@@ -17,7 +17,7 @@ class Anything extends React.Component {
           <p>这儿我们仅仅看了<code>next/link</code>非常基本的用法.还有一些非常有趣的使用方法，我们将在下来的课程中学习它们.</p>
           <p>同时,可以看一看<a href="https://github.com/zeit/next.js#routing" target="_blank">Next.js 路由文档</a>.你将发现它是非常有用的.</p>
         </div>
-        <Footer url="/share" next={{ text:"下一课" }} />
+        <Footer url="/shared-component/" next={{ text:"下一课" }} />
       </div>
     )
   }
