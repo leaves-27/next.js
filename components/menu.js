@@ -9,29 +9,29 @@ const Navigator = [
     desc:"起步入门"
   },
   {
-    url:"/navigate/index",
+    url:"/navigate/",
     desc:"在页面间的跳转"
   },
   {
     url:"/shared-component/",
     desc:"共享组件的用法"
   },{
-    url:"/dynamic",
+    url:"/dynamic-pages/",
     desc:"创建动态页面"
   },{
-    url:"/clean",
+    url:"/clean-urls/",
     desc:"路由美化后的清晰URLs"
   },{
-    url:"/server",
+    url:"/server-side-support/",
     desc:"清晰URLs的服务器端支持"
   },{
-    url:"/fetch",
+    url:"/fetching-data/",
     desc:"为页面获取数据"
   },{
-    url:"/style",
+    url:"/style/",
     desc:"给组件添加样式"
   },{
-    url:"/deploy",
+    url:"/deploy/",
     desc:"部署一个Next.js App"
   }
 ]

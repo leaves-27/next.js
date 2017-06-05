@@ -29,7 +29,7 @@ class ShareComponent extends React.Component {
       <Layout>
         <h2 style={{ "marginBottom" : "40px" }}>共享组件的用法</h2>
         { this.getTemplate() }
-        <Footer url="/dynamic" />
+        <Footer url="/dynamic" next={{ text:"下一课" }} />
       </Layout>
     )
   }
