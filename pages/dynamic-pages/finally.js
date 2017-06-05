@@ -27,7 +27,7 @@ class PassData extends React.Component {
       <Layout>
         <h2 style={{ "marginBottom" : "40px" }}>创建动态页面</h2>
         { this.getTemplate() }
-        <Footer url="/dynamic-pages/finally" next={{ text:"下一课" }} />
+        <Footer url="/clean-urls/" next={{ text:"下一课" }} />
       </Layout>
     )
   }
