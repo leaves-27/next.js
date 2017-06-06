@@ -20,7 +20,7 @@ const Navigator = [
     desc:"创建动态页面"
   },{
     url:"/clean-urls/",
-    desc:"路由美化后的清晰URLs"
+    desc:"经过路由美化后的清晰URLs"
   },{
     url:"/server-side-support/",
     desc:"清晰URLs的服务器端支持"
