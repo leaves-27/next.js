@@ -9,7 +9,7 @@ import Footer from '../../components/footer';
 import { initStore } from '../../store'
 import * as actionType from '../../actions';
 
-class Finally extends React.Component {
+class FetchingDataClient extends React.Component {
   
   getTemplate(){
 
@@ -32,4 +32,4 @@ class Finally extends React.Component {
   }
 }
 
-export default withRedux(initStore,null,null)(Finally)
+export default withRedux(initStore,null,null)(FetchingDataClient)
