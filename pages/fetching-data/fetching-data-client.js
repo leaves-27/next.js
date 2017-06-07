@@ -14,9 +14,10 @@ class FetchingDataClient extends React.Component {
   getTemplate(){
 
     return (
-      <div data-reactid="119"><h2 id="fetch-data-in-client-side">Fetch Data in Client Side</h2>
-        <p>Here we can only see the message on the browser console.<br>That's because we navigated to the post page via the client side. Then fetching data from the client side is the best way to do it.</p>
-        <p>If you just visit a post page directly (eg:- <a href="http://localhost:3000/p/975" target="_blank">http://localhost:3000/p/975</a>) you'll be able to see the message printed on the server but not in the client.</p>
+      <div>
+        <h2 id="fetch-data-in-client-side">在客户端获取数据</h2>
+        <p>这人我们仅仅在浏览器端的控制台看到这个信息.<br />原因是因为其是通过客户端路由跳转到博客投票页面. 然后从客户端获取数据.</p>
+        <p>如果你仅仅之间访问这个投票页面(例如:- <a href="http://localhost:3000/p/975" target="_blank">http://localhost:3000/p/975</a>) 你将在仅仅在服务器端控制台看到这条信息而不是在客户端控制台.</p>
       </div>
     )
   }
@@ -26,7 +27,7 @@ class FetchingDataClient extends React.Component {
       <Layout>
         <h2 style={{ "marginBottom" : "40px" }}>为页面获取数据</h2>
         { this.getTemplate() }
-        <Footer url="/fetching-data/post-page" />
+        <Footer url="/fetching-data/finally" />
       </Layout>
     )
   }

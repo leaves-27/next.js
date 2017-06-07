@@ -14,9 +14,10 @@ class Finally extends React.Component {
   getTemplate(){
 
     return (
-      <div data-reactid="119"><h2 id="fetch-data-in-client-side">Fetch Data in Client Side</h2>
-        <p>Here we can only see the message on the browser console.<br>That's because we navigated to the post page via the client side. Then fetching data from the client side is the best way to do it.</p>
-        <p>If you just visit a post page directly (eg:- <a href="http://localhost:3000/p/975" target="_blank">http://localhost:3000/p/975</a>) you'll be able to see the message printed on the server but not in the client.</p>
+      <div>
+        <h2 id="finally">结束</h2>
+        <p>现在你已经学习了Next.js最重要的功能中之一。它为一般的数据获取并在服务器端渲染变的更完美。</p>
+        <p>我们已经学习了<code>getInitialProps</code>的基本用法，它对大多数情况已经足够了。想要了解更多的信息，可以看关于<a href="https://github.com/zeit/next.js#fetching-data-and-component-lifecycle" target="_blank">数据获取</a>的Next.js文档.</p>
       </div>
     )
   }
