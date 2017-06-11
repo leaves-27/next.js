@@ -27,7 +27,7 @@ class Finally extends React.Component {
       <Layout>
         <h2 style={{ "marginBottom" : "40px" }}>为页面获取数据</h2>
         { this.getTemplate() }
-        <Footer url="/fetching-data/post-page" />
+        <Footer url="/style/" />
       </Layout>
     )
   }
