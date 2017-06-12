@@ -16,14 +16,20 @@ class Setup extends React.Component {
       <div>
         <h2 id="setup">Setup</h2>
         <p>In order to follow this lesson, you will need to have a simple Next.js app. For that, you can download the following example app:</p>
-        <pre><code class="lang-bash hljs">git <span class="hljs-built_in">clone</span> https://github.com/arunoda/learnnextjs-demo.git
-        <span class="hljs-built_in">cd</span> learnnextjs-demo
-        git checkout clean-urls-ssr
-        </code></pre>
+        <pre>
+          <code class="lang-bash hljs">
+            git <span class="hljs-built_in">clone</span> https://github.com/arunoda/learnnextjs-demo.git <br />
+            <span class="hljs-built_in">cd</span> learnnextjs-demo<br />
+            git checkout clean-urls-ssr
+          </code>
+        </pre>
         <p>You can run it with:</p>
-        <pre><code class="lang-bash hljs">npm install
-        npm run dev
-        </code></pre>
+        <pre>
+          <code class="lang-bash hljs">
+            npm install<br />
+            npm run dev
+          </code>
+        </pre>
         <p>Now you can access the app by navigating into <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>.</p>
       </div>
     )
