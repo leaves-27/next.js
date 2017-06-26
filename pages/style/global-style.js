@@ -47,11 +47,11 @@ class Index extends React.Component {
 
     return (
       <div data-reactid="128">
-        <h2 id="global-styles">Global Styles</h2>
-        <p>Sometimes, we do need to change styles inside of a child component. This is especially true when using markdown with React. You can see that on our post page. (<code>pages/post.js</code>)</p>
-        <p>This is where global styles come in handy. Now try to add some global style rules with styled-jsx. Apply the following content to <code>pages/post.js</code>.</p>
+        <h2 id="global-styles">全局样式</h2>
+        <p>有时, 我们需要在子元素的内部改变样式.特别的是markdown和React一起使用时.你可以看看我们的投票页面. (<code>pages/post.js</code>)</p>
+        <p>这是全局样式使用的地方. 现在试着用styled-jsx添加一些全局的样式规则.在 <code>pages/post.js</code>中添加下面的内容.</p>
         <blockquote>
-          <p>Before you apply the following content, install <a href="https://github.com/rexxars/react-markdown" target="_blank">react-markdown</a> component into your app with: <code>npm install --save react-markdown</code></p>
+          <p>应用下面的内容前，用<code>npm install --save react-markdown</code>命令安装<a href="https://github.com/rexxars/react-markdown" target="_blank">react-markdown</a>组件到你的app</p>
         </blockquote>
         <pre>
           <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
@@ -71,17 +71,34 @@ class Index extends React.Component {
           }}>
           </code>
         </pre>
-        <p>What will happen?</p>
-        </div>
+        <p>将发生什么?</p>
+        {
+          Question({
+            "answers" : [{
+              id : "01",
+              desc : "没有什么被改变"
+            },{
+              id : "02",
+              desc : "样式应用到markdown内容上了"
+            },{
+              id : "03",
+              desc : "在页面上有一个错误"
+            },{
+              id : "04",
+              desc : "在控制台有一个错误"
+            }]
+          })
+        }
+      </div>
     )
   }
   render () {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/global-style-work" />
       </Layout>
     )
   }

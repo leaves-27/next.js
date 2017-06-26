@@ -14,9 +14,9 @@ class Index extends React.Component {
   getTemplate(){
     return (
       <div>
-        <h2 id="what-next">What Next</h2>
-        <p>We have just scratched the surface with styled-jsx here, and there is a lot more that you can do. Refer to the <a href="https://github.com/zeit/styled-jsx" target="_blank">styled-jsx</a> GitHub repo for more info.</p>
-        <p>There are a number of <a href="https://github.com/zeit/next.js#css-in-js" target="_blank">other styling solutions</a> for Next.js that are pretty good, so have a look at them too.</p>
+        <h2 id="what-next">Next是什么？</h2>
+        <p>这儿，我们刚刚用styled-js修饰了这个界面，其实有许多方法可以做到。更多信息参考 <a href="https://github.com/zeit/styled-jsx" target="_blank">styled-jsx</a> GitHub仓库.</p>
+        <p>有大量的其他的为Next.js变的漂亮的样式化方案<a href="https://github.com/zeit/next.js#css-in-js" target="_blank">other styling solutions</a>也可以看看它们.</p>
       </div>
     )
   }

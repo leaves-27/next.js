@@ -14,8 +14,8 @@ class Setup extends React.Component {
   getTemplate(){
     return (
       <div>
-        <h2 id="setup">Setup</h2>
-        <p>In order to follow this lesson, you will need to have a simple Next.js app. For that, you can download the following example app:</p>
+        <h2 id="setup">开始</h2>
+        <p>在这一节课，我们需要一个简单的Next.js app来演示. 试着下载下面这个app例子:</p>
         <pre>
           <code class="lang-bash hljs">
             git <span class="hljs-built_in">clone</span> https://github.com/arunoda/learnnextjs-demo.git <br />
@@ -23,14 +23,14 @@ class Setup extends React.Component {
             git checkout clean-urls-ssr
           </code>
         </pre>
-        <p>You can run it with:</p>
+        <p>你可以用下面的命令运行它:</p>
         <pre>
           <code class="lang-bash hljs">
-            npm install<br />
+            npm install <br />
             npm run dev
           </code>
         </pre>
-        <p>Now you can access the app by navigating into <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>.</p>
+        <p>现在你可以通过打开<a href="http://localhost:3000" target="_blank">http://localhost:3000</a>访问这个app.</p>
       </div>
     )
   }
@@ -38,9 +38,9 @@ class Setup extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/style-home-page" />
       </Layout>
     )
   }

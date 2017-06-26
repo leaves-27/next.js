@@ -40,9 +40,9 @@ class Setup extends React.Component {
 
     return (
       <div>
-        <h2 id="styling-our-home-page">Styling our home page</h2>
-        <p>Now let's add some styles into our home page. (<code>pages/index.js</code>)</p>
-        <p>Simply replace <code>pages/index.js</code> with the following code:</p>
+        <h2 id="styling-our-home-page">给我们的主页添加样式</h2>
+        <p>现在让我们添加一些样式到我们的主页. (<code>pages/index.js</code>)</p>
+        <p>用下面的代码替换<code>pages/index.js</code>:</p>
         <pre>
           <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
             __html   : `<span class="hljs-keyword">import</span> Layout <span class="hljs-keyword">from</span> <span class="hljs-string">'../components/MyLayout.js'</span>
@@ -74,11 +74,13 @@ class Setup extends React.Component {
           }}>
           </code>
         </pre>
-        <p>Have a look at the <code>&lt;style jsx&gt;</code> element. This is where we write our CSS rules.</p>
-        <p>After you have replaced this code, our blog's home page will look like this:</p>
-        <p><img src="https://cloud.githubusercontent.com/assets/50838/25552915/f18f2f12-2c5a-11e7-97aa-4b9d4b9f95a7.png" alt="" /></p>
-        <p>In the above code, we did  not write styles directly inside of the style tag; rather, it was written inside of a template string.</p>
-        <p>Now try to write CSS directly without a template string (<code>{``}</code>). Like this:</p>
+        <p>看一看<code>&lt;style jsx&gt;</code>元素. 这是我们写我们的CSS规则的地方.</p>
+        <p>你替换了这个代码后,我们的博客主页将看起来像这样:</p>
+        <p><img style={{"max-width":"100%"}} src="https://cloud.githubusercontent.com/assets/50838/25552915/f18f2f12-2c5a-11e7-97aa-4b9d4b9f95a7.png" alt="" /></p>
+        <p>在上面的代码中,我们没有在style标签里直接写样式; 而是,在这个模板字符串内写样式.</p>
+        <p>现在尝试在没有模板字符串(<code dangerouslySetInnerHTML={{
+          __html : '{``}'
+        }}></code>)的情况下，直接写CSS. 像这样:</p>
         <pre>
           <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
             __html  : `&lt;style jsx&gt;
@@ -108,7 +110,24 @@ class Setup extends React.Component {
           }}>
           </code>
         </pre>
-        <p>What will happen?</p>
+        <p>将发生什么?</p>
+        {
+          Question({
+            "answers" : [{
+              id : "01",
+              desc : "没有什么被改变"
+            },{
+              id : "02",
+              desc : "新的样式应用了"
+            },{
+              id : "03",
+              desc : "在页面上显示了一个错误：'SyntaxError: Unexpected token'"
+            },{
+              id : "04",
+              desc : "在页面上显示了一个错误：'Invalid styles provided'"
+            }]
+          })
+        }
       </div>
     )
   }
@@ -116,9 +135,9 @@ class Setup extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/template-string" />
       </Layout>
     )
   }

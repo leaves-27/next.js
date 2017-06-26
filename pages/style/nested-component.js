@@ -39,8 +39,8 @@ class Index extends React.Component {
 
     return (
       <div>
-        <h2 id="styles-and-nested-components">Styles and Nested Components</h2>
-        <p>Now let's add a simple change to our home page. We have isolated our link component like this:</p>
+        <h2 id="styles-and-nested-components">样式和嵌套的组件</h2>
+        <p>现在让我们添加一些简单的变化到我们的主页. 我们像这样隔离我们的链接组件:</p>
         <pre>
           <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
             __html  : `<span class="hljs-keyword">import</span> Layout <span class="hljs-keyword">from</span> <span class="hljs-string">'../components/MyLayout.js'</span>
@@ -77,8 +77,25 @@ class Index extends React.Component {
           }}>
           </code>
         </pre>
-        <p>Replace the above content in <code>pages/index.js</code></p>
-        <p>What will happen?</p>
+        <p>用上面的内容替换 <code>pages/index.js</code>文件中的内容</p>
+        <p>将发生什么?</p>
+        {
+          Question({
+            "answers" : [{
+              id : "01",
+              desc : "没有什么被改变"
+            },{
+              id : "02",
+              desc : "h1的样式存在但是links的样式不在了"
+            },{
+              id : "03",
+              desc : "在页面上有一个错误"
+            },{
+              id : "04",
+              desc : "在控制台有一个错误"
+            }]
+          })
+        }
       </div>
     )
   }
@@ -86,9 +103,9 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/no-effect" />
       </Layout>
     )
   }

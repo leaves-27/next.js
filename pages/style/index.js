@@ -36,7 +36,7 @@ class Index extends React.Component {
       <Layout>
         <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/setup" />
       </Layout>
     )
   }

@@ -14,10 +14,10 @@ class Index extends React.Component {
   getTemplate(){
     return (
       <div data-reactid="128">
-        <h2 id="global-styles-work">Global Styles Work</h2>
-        <p>Yep that worked well. It worked, because our styles applied globally.</p>
-        <p>While this feature can be incredibly handy, we always recommend trying to write scoped styles (without the global prop).</p>
-        <p>Still, this is a great solution over normal style tags. With styled-jsx all necessary prefixing and CSS validation is done inside a babel plugin, so there is no additional runtime overhead.</p>
+        <h2 id="global-styles-work">全局样式工作原理</h2>
+        <p>是的，那个工作的很好.它工作了，因为我们应用的是全局样式.</p>
+        <p>虽然这个功能是极其方便的,但是我们还是推荐在一个作用域里面写样式(没有全局属性).</p>
+        <p>诚然，标准的样式标签是一个好的解决方案。带有styled-jsx的方案所有需要的前缀和CSS验证都是在一个babel插件里面被完成，因此没有传统的运行时开销。.</p>
       </div>
     )
   }
@@ -25,9 +25,9 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/what-next" />
       </Layout>
     )
   }

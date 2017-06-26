@@ -30,9 +30,6 @@ const Navigator = [
   },{
     url:"/style/",
     desc:"给组件添加样式"
-  },{
-    url:"/deploy/",
-    desc:"部署一个Next.js App"
   }
 ]
 

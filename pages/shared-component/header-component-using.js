@@ -31,7 +31,7 @@ class HeaderComponentUsing extends React.Component {
         </pre>
         <p>你也可以对about.js页面做同样的事情.</p>
         <p>完成这一步后,如果你在你的app中访问<a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>。在各页面间跳转的时候，你将可以看到一个新的头.</p>
-        <p><img src="https://cloud.githubusercontent.com/assets/50838/24333679/fa856f00-1279-11e7-931d-a5707e51a801.gif" alt="" /></p>
+        <p><img style={{"max-width":"100%"}} src="https://cloud.githubusercontent.com/assets/50838/24333679/fa856f00-1279-11e7-931d-a5707e51a801.gif" alt="" /></p>
         <hr />
         <p>对我们的应用，让我们尝试做一些简单的修改.</p>
         <ul>

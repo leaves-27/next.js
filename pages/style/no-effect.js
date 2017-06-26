@@ -33,12 +33,12 @@ class Index extends React.Component {
 
     return (
       <div>
-        <h2 id="no-effect-for-nested-component">No Effect for Nested Component</h2>
-        <p>This is what you've seen:</p>
-        <p><img src="https://cloud.githubusercontent.com/assets/50838/25552972/6becac5c-2c5c-11e7-9fce-61cdc207a10d.png" alt="" /></p>
-        <p>As you have witnessed, CSS rules have no effect on elements inside of a child component.</p>
-        <p>This feature of styled-jsx helps you to manage styles for bigger apps.</p>
-        <p>In that case, you need to style the child component directly. And in our particular case, we need to do this for our Link component:</p>
+        <h2 id="no-effect-for-nested-component">添加的样式对嵌套的组件没有效果</h2>
+        <p>这是你看到的:</p>
+        <p><img style={{"max-width":"100%"}} src="https://cloud.githubusercontent.com/assets/50838/25552972/6becac5c-2c5c-11e7-9fce-61cdc207a10d.png" alt="" /></p>
+        <p>正如你目睹的,CSS规则在子元素内的元素上没有效果.</p>
+        <p>styled-jsx的这个功能帮助你为更大的应用管理样式.</p>
+        <p>在那样的例子中,你需要直接给子组件添加样式才能得到样式. 在我们的特有案例中，我们需要为我们的Link组件来添加样式:</p>
         <pre>
           <code class="lang-js hljs javascript" dangerouslySetInnerHTML={{
             __html  : `<span class="hljs-keyword">const</span> PostLink = <span class="hljs-function">(<span class="hljs-params">{ post }</span>) =&gt;</span> (
@@ -53,7 +53,7 @@ class Index extends React.Component {
           </code>
         </pre>
         <blockquote>
-        <p>Otherwise, you could use <a href="https://github.com/zeit/styled-jsx#global-selectors" target="_blank">global selectors</a>.</p>
+        <p>否则的话，你可以用<a href="https://github.com/zeit/styled-jsx#global-selectors" target="_blank">全局的选择器</a>.</p>
         </blockquote>
       </div>
     )
@@ -62,9 +62,9 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/global-style" />
       </Layout>
     )
   }

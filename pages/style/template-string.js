@@ -14,9 +14,11 @@ class Index extends React.Component {
   getTemplate(){
     return (
       <div>
-        <h2 id="styles-should-go-inside-template-strings">Styles should go inside template strings</h2>
-        <p>Styled jsx works as a babel plugin. It will parse all of the CSS and apply it in the build process. (With that our styles get applied without any overhead time)</p>
-        <p>It also supports having constraints inside styled-jsx. In the future, you will be able to use any dynamic variable inside styled-jsx. That is why CSS needs to go inside of a template string. (<code>{``}</code>)</p>
+        <h2 id="styles-should-go-inside-template-strings">在模板字符串中添加样式应该成为过去式</h2>
+        <p>添加jsx进行样式化像一个babel插件一样工作.它将在构建过程中解析所有的CSS. (我们的样式应用没有任何时间开销)</p>
+        <p>在styled-jsx内，它也支持约束. 在将来,你将可能在styled-jsx内应用一些动态变量.那个也是为什么CSS需要而不是放在一个模板字符串内的原因. (<code dangerouslySetInnerHTML={{
+          __html : '{``}'
+        }}></code>)</p>
       </div>
     )
   }
@@ -24,9 +26,9 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <h2 style={{ "marginBottom" : "40px" }}>清晰URLs的服务器端支持</h2>
+        <h2 style={{ "marginBottom" : "40px" }}>添加样式</h2>
         { this.getTemplate() }
-        <Footer url="/server-side-support/server" />
+        <Footer url="/style/nested-component" />
       </Layout>
     )
   }
