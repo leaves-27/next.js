@@ -8,7 +8,8 @@ function User(user){
 User.prototype.save = function(callback){
 	var user = {
 		name : this.name,
-		password : this.password
+		password : this.password,
+		email : this.email
 	};
 	
 	mongodb.open(function(err,db){

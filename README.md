@@ -2,17 +2,36 @@
   注册
   登录
 
-id
-email
-name
-pwd
+user
+
+  id:
+  email:
+  name:
+  pwd:
 
 # 产品体系
 
-书目
-
-id
 book
-isPay
+
+  id:
+  name:
+  contents:
+    {
+      id:""
+      name:""
+      isDisabled:true
+    }
+
+
+# 支付体系
+
+trade
+  id
+  bookId
+  userId
+
+
+
+
 
 
